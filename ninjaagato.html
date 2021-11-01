@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		    setTimeout(function() {
+		        $(".content").fadeOut(1500);
+		    },3000);
+		 
+		    setTimeout(function() {
+		        $(".content2").fadeIn(1500);
+		    },6000);
+		});
+		</script>
+    </head>
+    <body>
+        <image class="imagen1" src="cat0.png"/>
+        <image class ="imagen1" src="ninja0.png" style="display: none;"/>
+        <br>
+        <image class="imagen2" src="cat1.png"/>
+        <image class ="imagen2" src="ninja1.png" style="display: none;"/>
+        <br>
+        <image class="imagen3" src="cat2.png"/>
+        <image class ="imagen3" src="ninja2.png" style="display: none;"/>
+        <br>
+        <image class="imagen4" src="cat3.png"/>
+        <image class ="imagen4" src="ninja3.png" style="display: none;"/>
+        <br>
+        <image class="imagen5" src="cat4.png"/>
+        <image class ="imagen5" src="ninja4.png" style="display: none;"/>
+
+        <script >
+			$( ".imagen1" ).on( "click", function() { 
+				$( ".imagen1" ).toggle();
+			  });
+
+            $( ".imagen2" ).on( "click", function() { 
+				$( ".imagen2" ).toggle();
+			  });
+
+            $( ".imagen3" ).on( "click", function() { 
+				$( ".imagen3" ).toggle();
+			  });
+
+            $( ".imagen4" ).on( "click", function() { 
+				$( ".imagen4" ).toggle();
+			  });
+            
+            $( ".imagen5" ).on( "click", function() { 
+				$( ".imagen5" ).toggle();
+			  });
+
+			 
+		</script>	
+    </body>
+</html>
